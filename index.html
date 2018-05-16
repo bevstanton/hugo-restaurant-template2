@@ -1,78 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-    box-sizing: border-box;
-}
-
-body {
+body, html {
+    height: 100%;
     margin: 0;
-    font-family: Arial;
-    font-size: 17px;
 }
 
-#myVideo {
-    position: fixed;
-    right: 0;
+.bgimg {
+    background-image: url('glitchcats.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
     bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
+    left: 16px;
 }
 
-.content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #00f9ff;
-    width: 100%;
-    padding: 20px;
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-
-#myBtn:hover {
-    background: #ddd;
-    color: black;
+hr {
+    margin: auto;
+    width: 40%;
 }
 </style>
-</head>
 <body>
 
-<video autoplay muted loop id="myVideo">
-  <source src="glitchcats.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<div class="content">
-  <h1>Neon Kimba</h1>
-  <p>Everyday everyday blah blah blah blah blah.</p>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+<div class="bgimg">
+  <div class="topleft">
+    <p>Neon Kimba</p>
+  </div>
+  <div class="middle">
+    <h1>Everday everyday </h1>
+    <hr>
+    <p>blah blah blah blah blah</p>
+  </div>
+  <div class="bottomleft">
+    <p>Some text</p>
+  </div>
 </div>
-
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
 
 </body>
 </html>
