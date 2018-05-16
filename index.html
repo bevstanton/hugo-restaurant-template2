@@ -8,24 +8,55 @@
     <title>Hello World</title>
   </head>
   <body>
-    <div class="wrapper">
-    <div class="container">
-      <header>
-        <h1 class="name">jlord</h1>
-      </header>
-      <article>
-        <p>I'm an <a href="http://en.wikipedia.org/wiki/Open-source_software" target="_blank">open source</a> developer and designer living in Oakland, California. Far, far away from my <a href="http://en.wikipedia.org/wiki/Central_Georgia" target="_blank">East Coast US roots</a>. I work at <a href="http://www.github.com/about" target="_blank">GitHub</a>, mentor at programming events (<a href="http://www.nodeschool.io">NodeSchool.io</a>, <a href="https://github.com/blog/1805-patchwork-night" target="_blank">Patchwork</a>) and do some conferences, too.</p>
-        <p> Previously I was an <a href="http://www.bostonredevelopmentauthority.org" target="_blank">urban designer</a>, but the call of the wild open tech world would win me over.</p>
-      </article>
+    <style>
+      * { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+    </style>       
+   <div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/dlGO6WZT2_Y?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
 
-    <footer>
-      <ul class="meta inline-list">
-        <li><a href="mailto:to.jlord@gmail.com">to.jlord@gmail.com</a></li>
-        <li><a href="http://www.twitter.com/jllord" target="_blank">twitter/jllord</a></li>
-        <li><a href="http://www.github.com/jlord" target="_blank">github/jlord</a></li>
-      </ul>
-    </footer>
+<div id="vidtop-content">
+<div class="vid-info">
+	  <h1>YouTube Fullscreen Background Demo</h1>
+  <p>yeah!</p>
   </div>
-  </div>
+</div>
   </body>
 </html>
