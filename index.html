@@ -57,6 +57,15 @@ hr {
     <hr>
     <p class="blue">blah blah blah blah blah</p>
   </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.5/wavesurfer.min.js"></script>
+    <script>
+        var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'violet',
+    progressColor: 'purple'
+});
+        wavesurfer.load('03-Why Listen to Me.mp3');
+    </script>
   <div class="bottomleft">
     <p></p>
   </div>
