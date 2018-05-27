@@ -29,7 +29,6 @@ body, html {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: red;
    color: white;
    text-align: center;
 }
@@ -67,7 +66,10 @@ hr {
     <hr>
     <p class="blue">blah blah blah blah blah</p>
       <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/2.0.5/wavesurfer.min.js"></script>
-    
+    <button class="btn btn-primary" onclick="wavesurfer.toggleMute()">
+      <i class="fa fa-volume-off"></i>
+      Silence Me
+    </button>
   </div>
     
     
