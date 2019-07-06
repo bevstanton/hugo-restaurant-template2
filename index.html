@@ -79,14 +79,31 @@ hr {
 <body>
 
 <div class="bgimg">
-    <div class="w3-bar">
-     <span class="green"><span style="color: yellow;">neon.</span><span style="color: pink;">bev.</span><span style="color: aqua;">click</span>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdB2dqS4PtazrIRuvol6ynlzrx6ybdifMnd9uXywA4B1RSPeQ/viewform?usp=sf_link" class="w3-bar-item w3-button w3-right">Contact</a>
-         <a href="https://www.bevstanton.com/2019/04/dawless.html" class="w3-bar-item w3-button w3-right">About</a>
-            <a href="https://neonbevclick.bandcamp.com/releases" class="w3-bar-item w3-button w3-right"><i class="fa fa-bandcamp" aria-hidden="true"></i></a>
-  
-
+    <div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button"><span class="green"><span style="color: yellow;">neon.</span><span style="color: pink;">bev.</span><span style="color: aqua;">click</span></a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdB2dqS4PtazrIRuvol6ynlzrx6ybdifMnd9uXywA4B1RSPeQ/viewform?usp=sf_link" class="w3-bar-item w3-button w3-right w3-hide-small">Contact</a>
+         <a href="https://www.bevstanton.com/2019/04/dawless.html" class="w3-bar-item w3-button w3-right w3-hide-small">About</a>
+            <a href="https://neonbevclick.bandcamp.com/releases" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fa fa-bandcamp" aria-hidden="true"></i>Bandcamp</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 </div>
+
+<div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdB2dqS4PtazrIRuvol6ynlzrx6ybdifMnd9uXywA4B1RSPeQ/viewform?usp=sf_link" class="w3-bar-item w3-button">Contact</a>
+  <a href="https://www.bevstanton.com/2019/04/dawless.html" class="whttps://neonbevclick.bandcamp.com/releases3-bar-item w3-button">About</a>
+  <a href="https://neonbevclick.bandcamp.com/releases" class="w3-bar-item w3-button"><i class="fa fa-bandcamp" aria-hidden="true"></i>Bandcamp</a>
+</div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
     
  
   <div class="middle">
