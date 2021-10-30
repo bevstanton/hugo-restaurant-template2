@@ -24,9 +24,16 @@ body, html {
     margin: 0;
     background-color: #000;
 }
-
+	
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 .bgimg {
-    background-image: url('glitch-cats.jpg');
+/* background-image: url('glitch-cats.jpg');*/
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -164,6 +171,9 @@ body, html {
   <a href="https://drive.google.com/file/d/1yyseh9-Y6B0oZOmr6_J3Fwep8YQAFHqQ/view?usp=sharing" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> One Sheet</a>
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdB2dqS4PtazrIRuvol6ynlzrx6ybdifMnd9uXywA4B1RSPeQ/viewform?usp=sf_link" target="_blank" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
 </nav>
+<video autoplay muted loop id="myVideo">
+  <source src="glitch-cats.mp4" type="video/mp4">
+</video>	
 <div class="bgimg">
 
   <div class="middle">
