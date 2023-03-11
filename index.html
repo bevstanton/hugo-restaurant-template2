@@ -142,6 +142,23 @@ body, html {
 </style>
     </head>
 <body>
+ <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-black">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+<img src="nbc-bio.jpg"  class="w3-image">
+        <p>
+After winning a Pocket Operator drum machine at a raffle during the NorthEast
+Electro-Music Festival, electronic musician Bev Stanton was propelled towards a
+new musical direction improvising with small machines as opposed to producing
+tracks on a computer. The brains of her outfit is an MC-303 groovebox she bought
+in the late 90s that she has retr0brighted for the occasion. Performing DAWless live
+sets keeps Stanton in the inspiration part of the creative process and provides the
+tactile sensation that is sometimes missing when working in recording software.</p>
+      </div>
+    </div>
+  </div>	
+	
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -151,7 +168,7 @@ body, html {
     <div class="w3-right w3-hide-small">
       <a href="https://songwhip.com/neonbevclick" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-headphones" aria-hidden="true"></i> Get Music</a>
       <a href="https://neonbevclick.tumblr.com" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-tumblr-square" aria-hidden="true"></i> Videos</a>
-      <a href="https://drive.google.com/file/d/1yyseh9-Y6B0oZOmr6_J3Fwep8YQAFHqQ/view?usp=sharing" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> One Sheet</a>
+      <a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</a>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdB2dqS4PtazrIRuvol6ynlzrx6ybdifMnd9uXywA4B1RSPeQ/viewform?usp=sf_link" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
       
     </div>
